@@ -23,7 +23,7 @@ app.get("/", function (req, res) {
   res.send(`Hello ${userName}`);  //Função básica para ínicio de página
 });
 
-app.listen(3000, function() { //Função para acionar a port: 3000
+app.listen(process.env.PORT || 3000, function() { //Função para acionar a port: 3000
   console.log(`Server running at port https://localhost:3000/`) 
 });
 
