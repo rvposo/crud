@@ -23,9 +23,9 @@ app.get("/", function (req, res) {
   res.send(`Hello ${userName}`);  //Função básica para ínicio de página
 });
 
-app.listen(process.env.PORT || 3000, function() { //Função para acionar a port: 3000
+ */ app.listen(process.env.PORT || 3000, function() { //Função para acionar a port: 3000
   console.log(`Server running at port https://localhost:3000/`) 
-});
+}); */ 
 
 // Endpoint [GET] /agents Read All; Irá imprimir todos os itens presentes no array "agents"
  app.get("/agents", async function (req, res) {
@@ -73,7 +73,11 @@ app.put("/agents/:id", async function (req, res){
  app.get("/oi", function (req, res){
    res.send(`Oi ${userName}`)
  })
- 
+ app.listen(process.env.PORT || 3000, function() { //Função para acionar a port: 3000
+  console.log(`Server running at port https://localhost:3000/`) 
+});
 }
+
+
 
  main();
